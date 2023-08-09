@@ -1,0 +1,243 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color:antiquewhite;
+    font-family: 'Poppins', sans-serif;
+}
+.container1{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    font-size: 45px;
+    color: white;
+    
+    /* border-color: red; */
+}
+.container2{
+    /* padding: 20px; */
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+    color: white;
+    width: 98vw;
+   
+    /* background-color: white; */
+    /* border: 2px solid white; */
+}
+hr{
+    margin-top: 10px;
+    width: 100%;
+    border:black solid 1px;
+}
+
+.fa-square-plus{
+    font-size: 40px;
+    color:blue;
+}
+.blur{
+    filter: blur(4px);
+
+}
+#noitem{
+    color: red;
+}
+a:hover{
+    cursor: pointer;
+}
+a:link{
+    text-decoration: none;
+    color: white;
+}
+a:visited{
+    color: white;
+}
+.popup{
+    visibility: hidden;
+    position: absolute;
+    padding-top: 20px;
+    font-size: 25px;
+    border-radius: 10px;
+    text-align: center;
+    border:2px solid red;
+    /* color: red; */
+    top: 35%;
+    left: 30%;
+    width: 35vw;
+    height: 220px;
+    background-color: white;
+    /* transform: translateY(20px); */
+}
+#addbtn{
+    background-color: skyblue;
+}
+#addbtn2{
+    background-color: skyblue;
+}
+/* color: skyblue; */
+
+@keyframes pop {
+    from{top: 45%;}
+    to{ top: 35%;}
+    
+}
+.btn{
+    padding: 7px;
+    margin: 20px;
+    background-color: rgb(249, 9, 9);
+    color: white;
+    width: 70px;
+    border-radius: 20px;
+    font-size: 20px;
+    border: none;
+}
+.btn:hover{
+    cursor: pointer;
+    color: black;
+    box-shadow: 5px 5px 2px gray;
+}
+
+.popinput{
+    margin-top: 0px;
+    text-align: center;
+    width: 80%;
+    height: 35px;
+    box-shadow: 3px 3px 3px gray;
+    border: 2px black solid;
+    border-radius: 10px;
+}
+
+.child{
+    margin: 50px;
+    padding-top: 10px;
+    position: relative;
+    height: 350px;
+    width: 250px;
+    color:black;
+    border: 2px solid aqua;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.fa-trash-can{
+    color: darkred;
+    position: absolute;
+    top: 85%;
+    cursor: pointer;
+}
+.fa-trash-can:hover{
+    font-size: larger;
+    color: red;
+
+}
+
+.fa-plus{
+    border-radius: 50%;
+    font-size: 25px;
+    position: absolute;
+    top: 86%;
+    right: 10%;
+    background-color:blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.fa-plus:hover{
+    font-size: 30px;
+}
+
+
+
+.markDonebtn{
+    background-color: #4681f4 ;
+    color: white;
+    border-radius: 10px;
+}
+
+.child2{
+    color: white;
+    font-size: 25px;
+}
+#name{
+    color: white;
+    /* color: black; */
+}
+#back{
+   visibility: hidden;
+   position: absolute;
+   left: 400px;
+}
+#addtask{
+    visibility: visible;
+}
+#cardheader{
+    border: none;
+    text-overflow: hidden;
+    width: 100%;
+    word-wrap: break-word;
+    height:fit-content;
+    /* background-color: black; */
+    background-color: whitesmoke;
+    color:black;
+    font-size: 25px;
+}
+.listText{
+    word-wrap: break-word;
+}
+#noitem{
+    margin-left: 12vw;
+    font-size: 30px;
+}
+@media  (min-width:320px) and (max-width:480px)  {
+    .container2{
+        padding-top: 20px;
+        width: 100%;
+        flex-direction: column;
+        align-content: space-evenly;
+    }.child{
+        margin: auto;
+        margin-top: 20px;
+    }
+    .ad{
+        display: none;
+    }
+    .popup{
+        width: 60vw;
+        left: 20%;
+    }
+    .btn{
+        position: relative;
+        bottom: 15px;
+    }
+    #addbtn2{
+        position: relative;
+        bottom: 5px;
+    }
+    #addbtn{
+        position: relative;
+        bottom: 5px;
+    }
+    #addtask{
+        position: relative;
+        top: 60px;
+        right: 100px;
+    }
+    .container1{
+        margin-top: auto;
+    }
+
+}
+@media (max-width:380px) {
+    .popup{
+        height: 270px;
+    }
+    .child{
+        margin: 10px;
+    }
+}
